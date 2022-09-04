@@ -64,4 +64,50 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // make the Tetromino move down every second
+  timerId = setInterval(moveDown, 1000);
+
+  // assign fucntions to keyCode
+  function control(e) {
+    if(e.keyCode === 37) {
+      moveLeft();
+    }
+  }
+  document.addEventListener('keyup', control);
+
+  // move down functiona
+  function moveDown() {
+    undraw();
+    currentPosition += width;
+    draw();
+    freeze();
+  }
+
+  // freeze function
+  function freeze() {
+    if(current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
+      current.forEach(index => squares[currentPosition + index].classList.add('taken'));
+      // start a new Tetromino falling
+      random = Math.floor(Math.random() * theTetrominoes.length);
+      current = theTetrominoes[random][currentRotation];
+      currentPosition = 4;
+  }
+
+  // move the Tetromino left, unless it's at the edge or there is a blockage
+  function moveLeft() {
+    undraw();
+    const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0);
+
+    if(!isAtLeftEdge) currentPosition -=1;
+
+    if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+      currentPosition =+1;
+    };
+
+    draw();
+  };
+
+
+  }
+
 });

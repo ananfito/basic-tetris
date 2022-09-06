@@ -70,7 +70,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // assign functions to keyCode
   function control(e) {
-    if(e.keyCode === 37) {
+/*
+    // keyCode is deprecated and might not work
+    // below is the replacement, but I can't get it to work (9/06/22)
+    // Documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+
+    switch(e.key) {
+      case "LeftArrow":
+        return moveLeft();
+        break;
+      case "UpArrow":
+        return rotate();
+        break;
+      case "RightArrow":
+        return moveRight();
+        break;
+      case "DownArrow":
+        return moveDown();
+        break;
+    }
+    */
+
+    if (e.keyCode === 37) {
       moveLeft();
     } else if (e.keyCode === 38) {
       rotate();
@@ -79,10 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (e.keyCode === 40) {
       moveDown();
     };
+
   };
   document.addEventListener('keyup', control);
 
-  // move down functiona
+  // move down function
   function moveDown() {
     undraw();
     currentPosition += width;
@@ -163,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displaySquares.forEach(square => {
       square.classList.remove('tetromino');
     });
-    upNextTerominoes[nextRandom].forEach( index => {
+    upNextTerominoes[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add('tetromino');
     });
   };

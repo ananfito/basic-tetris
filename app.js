@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   let squares = Array.from(document.querySelectorAll('.grid div'));
-  const ScoreDisplay = document.querySelector('#score');
-  const StartBtn = document.querySelector('#start-button');
+  const scoreDisplay = document.querySelector('#score');
+  const startBtn = document.querySelector('#start-button');
   const width = 10;
   let nextRandom = 0;
+  let timerId;
 
   // The Tetromineoes
   const lTetromino = [
@@ -64,9 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentPosition + index].classList.remove('tetromino');
     });
   };
-
-  // make the Tetromino move down every second
-  timerId = setInterval(moveDown, 1000);
 
   // assign functions to keyCode
   function control(e) {
@@ -185,9 +183,32 @@ document.addEventListener('DOMContentLoaded', () => {
     displaySquares.forEach(square => {
       square.classList.remove('tetromino');
     });
-    upNextTerominoes[nextRandom].forEach(index => {
+    upNextTetrominoes[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add('tetromino');
     });
   };
 
-});
+  // add functionality to the button
+
+  startBtn.addEventListener('click', () => {
+    if (timerId) {
+      clearInterval(timerId);
+      timerId = null;
+    } else {
+      draw();
+      timerId = setInterval(moveDown, 1000); // moves tetromino down every second
+      nextRandom = Math.floor(Math.random()*theTetrominoes.length);
+      displayShape();
+      };
+    });
+
+
+
+
+
+
+
+
+
+
+}); //end of original addEventListener

@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 
-  // add functionality to the button
+  // add functionality to the start/pause button
   startBtn.addEventListener('click', () => {
     if (timerId) {
       clearInterval(timerId);
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.innerHTML = score;
         row.forEach(index => {
           squares[index].classList.remove('taken');
-          squars[index].classList.remove('tetromino');
+          squares[index].classList.remove('tetromino');
           squares[index].style.backgroundColor =  '';
         });
         const squaresRemoved = squares.splice(i, width);

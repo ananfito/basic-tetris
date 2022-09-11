@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // show up-next Tetromino in mini-grid
   const displaySquares = document.querySelectorAll('.mini-grid div');
   const displayWidth = 4;
-  let displayIndex = 0;
+  const displayIndex = 0;
 
 
   // the Tetromineoes without rotations

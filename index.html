@@ -8,9 +8,20 @@
     <title>Basic Tetris</title>
   </head>
   <body>
-
-    <h3>Score: <span id="score">0</span></h3>
-    <button id="start-button">Start/Pause</button>
+    <div class="header" id="game-info">
+      <h2 id="welcome">Welcome to Tetris!</h2>
+      <h3 id="instructions">Instructions:</h3>
+      <ul>
+        <li>As the blocks drop create a single, connected horizontal row</li>
+        <li>Use the 'left' and 'right' arrow keys to move the blocks left and right, respectively</li>
+        <li>Use the 'up' arrow key to rotate the block</li>
+        <li>When you're ready, press the 'Start/Pause' button to begin.</li>
+      </ul>
+    </div>
+    <div id="score-board">
+      <h3>Score: <span id="score">0</span></h3>
+      <button id="start-button">Start/Pause</button>
+    </div>
 
     <div class="container">
 
@@ -248,17 +259,10 @@
       </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
+  <footer>
+    <p>This game was designed by Anthony Nanfito following Ania Kubow's <a href="https://github.com/kubowania/Tetris-Basic" target="_blank">tutorial</a>.</p>
+    <p>You can find my code in my <a href="https://github.com/ananfito/basic-tetris" target="_blank">GitHub repo</a> and more projects on my <a href="https://ananfito.github.io/" target="_blank">portfolio</a>.</p>
+  </footer>
 
   </body>
 </html>

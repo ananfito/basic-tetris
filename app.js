@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let timerId;
   let score = 0;
   const colors = [
-    '#8b4513',
-    'red',
-    'purple',
-    'green',
-    'blue'
+    '#daa520', //goldenrod
+    '#f08080', //light coral
+    '#bf94e4', //bright lavender
+    '#3cb371', //medium sea green
+    '#87cefa' //light sky blue
   ];
 
 

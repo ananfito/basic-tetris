@@ -8,6 +8,9 @@
     <title>Basic Tetris</title>
   </head>
   <body>
+
+
+    <!-- Game info-->
     <div class="header" id="game-info">
       <h2 id="welcome">Welcome to Tetris!</h2>
       <h3 id="instructions">Instructions:</h3>
@@ -18,14 +21,20 @@
         <li>When you're ready, press the 'Start/Pause' button to begin</li>
       </ul>
     </div>
+
+
+    <!-- Score Board -->
     <div id="score-board">
       <h3>Score: <span id="score">0</span></h3>
       <button id="start-button">Start/Pause</button>
     </div>
 
+
+    <!-- Game Containter -->
     <div class="container">
 
-      <div class="grid">
+      <!-- Main Grid -->
+      <div class="grid" id="main-grid">
         <div></div>
         <div></div>
         <div></div>
@@ -227,6 +236,8 @@
         <div></div>
         <div></div>
         <div></div>
+
+        <!-- Grid for Taken Tetrominoes -->
         <div class="taken"></div>
         <div class="taken"></div>
         <div class="taken"></div>
@@ -239,7 +250,8 @@
         <div class="taken"></div>
       </div>
 
-      <div class="mini-grid">
+      <!-- Mini Grid for up-next Tetromino -->
+      <div class="mini-grid" id="mini-grid">
         <div></div>
         <div></div>
         <div></div>
@@ -257,12 +269,11 @@
         <div></div>
         <div></div>
       </div>
-
     </div>
-  <footer>
-    <p>This game was designed by Anthony Nanfito following Ania Kubow's <a href="https://github.com/kubowania/Tetris-Basic" target="_blank">tutorial</a>.</p>
-    <p>You can find my code in my <a href="https://github.com/ananfito/basic-tetris" target="_blank">GitHub repo</a> and more projects on my <a href="https://ananfito.github.io/" target="_blank">portfolio</a>.</p>
-  </footer>
 
+
+  <!-- Footer -->
+  <footer>Designed by <a id="portfolio-link" href="https://ananfito.github.io/" target="_blank">Anthony Nanfito</a> // <a id="source-code" href="https://github.com/ananfito/basic-tetris" target="_blank">GitHub Source Code</a>
+  </footer>
   </body>
 </html>

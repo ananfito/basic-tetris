@@ -1,25 +1,27 @@
 :root {
   --main-white: #fff;
   --main-blue: #155799;
-  --main-green: #ff8c00; //orange now
+  --main-orange: #ff8c00;
   --main-gray: #606c71;
   --main-turquoise: #40e0d0;
 }
 
+
+/* HTML & Body */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #eee;
   font-family: 'Lato', sans-serif;
   color: var(--main-white);
   display: block;
-  /*background-color: var(--main-blue);*/
   background-image: linear-gradient(45deg, var(--main-blue), var(--main-turquoise));
   background-origin: border-box;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
 }
@@ -32,14 +34,17 @@ body {
 
 .header {
   display: block;
-  margin: 10vh 25vw 5vh 25vw;
+  margin: 5vh 25vw 5vh 25vw;
   text-align: left;
 }
 
 .header #welcome {
   text-align: center;
+
 }
 
+
+/* Game Play Area */
 #score-board {
   display: flex;
   justify-content: center;
@@ -83,8 +88,21 @@ body {
   width: 20px;
 }
 
+
+/* Footer */
 footer {
   display: block;
+  justify-content: center;
   text-align: center;
-  margin: 0 25vw 10vh 25vw;
+  font-style: italic;
+  font-size: .75rem;
+
+}
+
+a:hover {
+  color: var(--main-turquoise);
+}
+
+footer > a {
+  color: var(--main-white);
 }

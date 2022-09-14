@@ -1,5 +1,5 @@
 # basic-tetris
- A basic Tetris app using HTML, CSS, and JS based on the tutorial taught by Ania Kubow.
+ A basic Tetris app using HTML, CSS, and JS based on the tutorial taught by Ania Kubow. A live version of the game can be viewed [here](https://ananfito.github.io/basic-tetris/)
 
  ## About
  For [my 100DaysOfCode journey](https://github.com/ananfito/100-days-of-code), I am learning how to program in JavaScript. This basic Tetris game was created by following [this "Code Tetris" tutorial](https://youtu.be/rAUn1Lom6dw) taught by [Ania Kubow](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw) on freeCodeCamp's YouTube Channel.

@@ -21,7 +21,6 @@
  - [September 04, 2022](https://github.com/ananfito/100-days-of-code#day-30-september-04-2022): Added functions for `freeze()`, `moveLeft()`, and `moveRight()`
  - [September 05, 2022](https://github.com/ananfito/100-days-of-code#day-31-september-05-2022): Updated `freeze()` function, organized `div` boxes, and created `displayShape()` function
  - [September 06, 2022](https://github.com/ananfito/100-days-of-code#day-32-september-06-2022): Attempted to fix deprecated code in the `control` function, Updated `displayShape()` function
- - [September 06, 2022](https://github.com/ananfito/100-days-of-code#day-32-september-06-2022): Attempted to fix deprecated code in the `control` function, Updated `displayShape()` function
  - [September 07, 2022](https://github.com/ananfito/100-days-of-code#day-33-september-07-2022): Added functionality to the `Start/Pause` button
  - [September 08, 2022](https://github.com/ananfito/100-days-of-code#day-34-september-08-2022): Completed the tutorial and the app works!
  - [September 14, 2022](https://github.com/ananfito/100-days-of-code#day-38-september-12-2022): Removed deprecated code from `control` function

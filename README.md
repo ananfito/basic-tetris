@@ -1,7 +1,7 @@
 # basic-tetris
  ## Contents
  - [About](#about)
- - [Status](#status)
+ - [Status - WORK IN PROGRESS](#status)
    - [Project Log](#project-log)
  - [Source Attribution](#source-attribution)
 

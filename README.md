@@ -1,4 +1,4 @@
-# basic-tetris
+# Basic Tetris
  ## Contents
  - [About](#about)
  - [Status - WORK IN PROGRESS](#status)

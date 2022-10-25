@@ -16,7 +16,7 @@
  In particular, if a vertical-like Tetromino (e.g., the `I` or `L` shaped Tetromino) falls down on the far left side of the grid it will go past the bottom edge instead of stopping. This image below dispalys what I mean.
  ![image of tetromino falling past the bottom border of the main grid](tetris-app-glitch.png)
 
- If you know how to solve this problem or would like to help, I am very open to mentorship and collaboration. Feel free to contact me via [email](mailto:ananfito@gmail.com). Thank you.
+ If you know how to solve this problem or would like to help, I am very open to mentorship and collaboration. Feel free to contact me via [email](https://anthonynanfito.com/contact). Thank you.
 
  ### Project Log
  My updates for this project can be found in the following [#100DaysOfCode](https://github.com/ananfito/100-days-of-code) Entries:
